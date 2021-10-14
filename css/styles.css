@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  /* prevent overscroll bounce*/
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  /* iOS velocity scrolling */
+}
+
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  background-color: palevioletred;
+}
+
+.hamburger {
+  width: 3rem;
+  height: 100%;
+  position: absolute;
+  top: 78%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.line {
+  width: 3rem;
+  height: 0.5rem;
+  background-color: black;
+}
+.line:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.page-title {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+.content-container {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.hero {
+  height: 70vh;
+  background-image: url("../images/mainBanner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.search-container {
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+}
+.icon {
+  width: 2.5rem;
+  margin-right: 1rem;
+}
+.coffee-search {
+  flex: 1;
+  height: 100%;
+  padding: 1rem 0.5rem;
+}
+
+.menu-container {
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin: 0 0 1rem 0;
+}
+
+.menu {
+  padding: 0.5rem 1rem;
+  border: 1px solid gainsboro;
+  cursor: pointer;
+  width: 33%;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.menu-active {
+  background-color: palevioletred;
+}
+
+.category-container {
+  display: flex;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid gainsboro;
+  cursor: pointer;
+}
+
+.category:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.coffee {
+  padding: 2rem;
+}
