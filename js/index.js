@@ -8,3 +8,5 @@ categoryContainer.addEventListener("click", (e) => {
     elToScroll.scrollIntoView({ behavior: "smooth" });
   }
 });
+
+document.documentElement.requestFullscreen();
